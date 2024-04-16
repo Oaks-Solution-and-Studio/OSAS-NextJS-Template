@@ -3,7 +3,7 @@ const APIResult = {
   FAILED: 0,
   SUCCESS: 1,
   INVALID: 5,
-  INCOMPLETE_INPUT:-1002,
+  INCOMPLETE_INPUT: -1002,
 };
 
 export default APIResult;

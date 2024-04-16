@@ -1,3 +1,5 @@
+
+
 # Welcome to Oaks Solution and Studio NextJS Project Template
 
 ![Cover Photo](screenshots/cover_photo.png)
@@ -8,18 +10,29 @@ This project template has been carefully crafted to provide a standardized struc
 
 The project structure is designed to keep your codebase organized and easy to navigate:
 
-- `public` folder: The public folder, where all the media or font files store.
-  - `fonts` folder: The font files.
-  - `images` folder: The image files.
-  - `css` folder: The CSS files.
 - `src` folder: The source folder
+  - `assets` folder: The public folder, where all the media or font files store.
+	  - `fonts` folder: The font files.
+	  - `images` folder: The image files.
+	  - `css` folder: The CSS files.
   - `app` folder: The main source code directory.
   - `components` folder: Reusable UI components.
     - `dialogs` folder: UI dialog components.
     - `widgets` folder: Widget components.
   - `configs` folder: Configuration files for the project.
   - `utilities` folder: Reusable utility functions.
+	  - `EventBus.js`: Consists of 
   - `***/page.js` files: Page components.
+
+## Image Processing Feature
+
+Included in this template is a `process_image.bash` script, which automatically resizes images to various predefined sizes for optimal loading and performance across different devices. This script ensures that images are processed and available in multiple resolutions, significantly enhancing page load times and user experience.
+
+You may run it with `npm run ri`
+
+## Port Selection
+
+Default port for this template is 43149, start your project with `npm run osas` to get all the built-in features.
 
 ## Getting Started
 
