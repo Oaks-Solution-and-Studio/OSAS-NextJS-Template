@@ -1,5 +1,4 @@
 import PageWrapper from "./components/widgets/page_wrapper/page_wrapper";
-import Stars from "./components/widgets/stars/stars";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -33,7 +32,6 @@ export default function Home() {
           </p>
         </div>
       </PageWrapper>
-      <Stars />
     </main>
   );
 }

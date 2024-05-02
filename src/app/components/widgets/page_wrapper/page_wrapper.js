@@ -7,7 +7,7 @@ import { EventBus, HideDialog, ShowDialog } from "@/app/utilities/EventBus";
 import LoadingOverlay from "../loading_overlay/loading_overlay";
 import { DialogPack, GetDialogPack } from "@/app/configs/DialogConstants";
 import { PropTypes } from "prop-types";
-import BasicDialog from "../../dialogs/basic_dialog/ basic_dialog";
+import BasicDialog from "../../dialogs/basic_dialog/basic_dialog";
 class PageWrapper extends Component {
   constructor(props) {
     super(props);
@@ -100,26 +100,8 @@ class PageWrapper extends Component {
   };
 
   render() {
-    const {
-      showLoading,
-      loadingMessage,
-      profileDialog,
-      showTopBar,
-      isSticky,
-      isFadeOut,
-      userData,
-      showPage,
-      dialogPack,
-    } = this.state;
-    const {
-      className,
-      topCover,
-      topBar,
-      children,
-      layoutType,
-      showFooter,
-      stickFooter,
-    } = this.props;
+    const { showLoading, loadingMessage, showPage, dialogPack } = this.state;
+    const { className, topCover, topBar, children } = this.props;
     const NunitoTheme = createTheme({
       typography: {
         fontFamily: "inherit",

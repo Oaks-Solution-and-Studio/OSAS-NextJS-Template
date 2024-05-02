@@ -1,14 +1,14 @@
 {
   "name": "osas-nextjs-template",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "osas": "node osas.js",
-    "ri": "cd src/app/assets/img && bash ./process_image.bash"
+    "os": "node osas.js",
+    "ob": "next build && bash ./build-tools/post.sh"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
